@@ -8,4 +8,6 @@ db_connection = { 'database': 'disaster_db',
 
 db_table = "disasters"
 
+need_db = False
+
 disaster_levels = ['A', 'B', 'C']
