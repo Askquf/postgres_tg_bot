@@ -2,7 +2,7 @@ import requests
 from secret import zabbix_token
 from config import need_db, zabbix_server_api
 import json
-if need_db == True:
+if need_db:
     import db_worker
 
 class RequestWorker:
