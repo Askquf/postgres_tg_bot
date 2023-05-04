@@ -1,13 +1,11 @@
 import re
 from datetime import datetime
 import telebot
-import db_worker
 import request_worker
 from config import disaster_levels, need_db
-from secret import token
+from secret import tg_token
 
-token = token
-bot = telebot.TeleBot(token)
+bot = telebot.TeleBot(tg_token)
 
 @bot.message_handler(content_types=['text'])
 def answer_message(message):
